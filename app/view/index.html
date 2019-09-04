@@ -7,13 +7,20 @@
 <body>
 <div>
   <div class='center'>
-    <div class='title'>Classify Chest Xrays showing pneumonia</div>
+    <div class='title'>Classify Chest X-Rays</div>
     <p>
-      Use images of chest xrays and this neural network will read whether it shows signs on pneumonia with a 96% accuracy
+      Use images of chest X-rays to detect signs of pneumonia.  
     </p>
-    <p>
-      Created by Andrew Willacy using the fast.ai framework, trained on a 5000+ chest xray dataset on kaggle.
-    </p>
+	<p>
+		The data uses X-rays which depict clear lungs without any areas of abnormal opacification in the image, 
+		compared with X-rays with bacterical and viral pneumonia. Because of this the machine learning algorithm may struggle with images which show no pneumonia but do show other chest issues.
+	</p>
+	<p>
+	This neural network was created by Andrew Willacy, using the fast.ai library.
+	</p>
+	<p>
+	Sensitivity: 0.88 // Specificity: 1.0 // Precision: 1.0
+	</p>
     <div class='content'>
       <div class='no-display'>
         <input id='file-input'
@@ -36,6 +43,14 @@
       <div class='result-label'>
         <label id='result-label'></label>
       </div>
+	  <p>
+	  About the data:
+	  <br><br>
+		Chest X-ray images (anterior-posterior) were selected from retrospective cohorts of pediatric patients of one 
+		to five years old from Guangzhou Women and Children’s Medical Center, Guangzhou. 
+		<br><br>
+		Dataset collected from Kaggle, provided my Paul Mooney: <a href="http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5">http://www.cell.com/cell/fulltext/S0092-8674(18)30154-5</a>
+	</p>
     </div>
   </div>
 </div>
